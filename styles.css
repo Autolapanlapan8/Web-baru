@@ -1,0 +1,162 @@
+:root {
+  --primary: #f39c12;
+  --secondary: #2c3e50;
+  --light: #ecf0f1;
+  --dark: #34495e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--secondary);
+}
+
+header {
+  background-color: var(--secondary);
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.logo i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1583&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.services {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--light);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 80px 0;
+  background-color: var(--light);
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact {
+  padding: 80px 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+footer {
+  background-color: var(--secondary);
+  color: white;
+  padding: 60px 0 0;
+  text-align: center;
+}
